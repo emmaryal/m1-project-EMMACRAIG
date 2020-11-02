@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cat Browser</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  
+    <script
+      src="https://kit.fontawesome.com/6d7e9862eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <!-- NAVIGATION BAR -->
+      <div class="nav-container">
+        <!-- HOME BUTTON -->
+        <!--<a href="index.html"
+          ><img
+            src="/images/cat-face-logo-black-bg.png"
+            alt="Logo"
+            class="navbar-brand"
+        /></a>-->
+        <i class="fas fa-bars"></i>
+        <ul class="nav-menu">
+          <!-- NAVIGATION BUTTONS -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="cat-facts.html">Dashboard</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- black cat image banner-->
+    <section class="banner">
+        
+        
+    </section>
+
+    <!-- end of black cat image banner-->
+
+    <section class="signup">
+    
+      <div class="form-wrapper">
+        <form class="signup-form" action="">
+          <input type="text" id="name" placeholder="Name" />
+          <input type="text" id="email" placeholder="Email" />
+          <input type="password" id="password" placeholder="Enter Password" />
+          <input
+            type="password"
+            id="repeat-password"
+            placeholder="Repeat Password"
+          />
+
+          <!-- The `disabled` deactivates the button. Button will be activated or desactivated by the `checkButton` method in the Singup.js  -->
+          <button
+            type="submit"
+            class="button"
+            id="signup-button"
+          >
+            Sign Up
+          </button>
+        </form>
+
+        <div class="message-container">
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul class="footer-list">
+        <li>icon link to our fb page</li>
+        <li>icon link to our insta page</li>
+        <li>icon contact</li>
+      </ul>
+    </footer>
+    <script src="scripts/Signup.js"></script>
+    <script src="scripts/Validator.js"></script>
+    <script src="scripts/User.js"></script>
+    <script src="scripts/Database.js"></script>
+  </body>
+</html>

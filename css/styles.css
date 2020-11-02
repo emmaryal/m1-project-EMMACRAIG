@@ -1,0 +1,413 @@
+/* --- CSS RESET --- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --- CSS RESET END --- */
+
+/************************* 
+*        STYLES          * 
+*************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grandstander&display=swap");
+
+h3 {
+  size: 2em;
+}
+
+body {
+  font-family: "Aclonica", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: teal;
+}
+
+body,
+a {
+  cursor: url("/images/pawprint.png"), auto;
+}
+
+#site-title {
+  size: 2em;
+}
+
+nav {
+  display: block;
+  padding: 10px 0 0 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  padding: 10px;
+}
+
+/* .nav-container a {
+  padding-bottom: 10px;
+} */
+
+.nav-container div {
+  display: block;
+}
+
+.nav-container img {
+  width: 50px;
+  height: 50px;
+  padding: 0 10px;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+nav {
+  width: 100%;
+  background-image: none;
+}
+.fa-bars {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+li {
+  padding: 25px 10px 0 10px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/images/grey-wallpaper.jpg);
+}
+
+.header {
+  background: url(/images/cat-background.png) no-repeat center center / cover;
+  width: 100%;
+  height: 40vh; /* 50vh; 50% of viweport height*/
+}
+
+.banner {
+  background: url(/images/cat-background.png) no-repeat center center / cover;
+  width: 100%;
+  height: 20vh; /* 50vh; 50% of viweport height*/
+}
+
+#portal-text {
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  color: aqua;
+  font-family: "Grandstander", cursive;
+}
+
+#portal-text > p {
+  font-size: 10px;
+  color: aqua;
+  font-family: "Grandstander", cursive;
+}
+
+.portal-info {
+  width: 100vw;
+  background-color: black;
+  color: aqua;
+  font-family: "Grandstander", cursive;
+}
+
+.random-cat {
+  /*background-image: url(/images/grey-wallpaper.jpg);*/
+  font-family: "Grandstander", cursive;
+  height: 25vh;
+}
+
+.footer-list {
+  padding: 40px 0;
+}
+
+.footer-list > li {
+  padding: 0;
+  font-size: 10px;
+}
+
+.cats-list {
+  /*font-family: "Grandstander", cursive;*/
+  border-color: white;
+  border-width: 5px;
+  height: auto;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.cats-list > article {
+  width: 30%;
+  height: auto;
+  margin: 1%;
+  border-radius: 10px;
+  background-color: honeydew;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cats-list > article > h3 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: black;
+  font-family: cursive;
+}
+
+.cats-list > article > p {
+  padding-top: 5px;
+  overflow: auto;
+}
+
+.cats-list > div {
+  width: auto;
+  height: auto;
+  margin: 1%;
+  
+ 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cat-search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.cat-search > div {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  width: 22%;
+  background-color: beige;
+}
+
+@media (max-width: 750px) {
+  .header-text {
+    width: 85%;
+  }
+  .cats-list > article {
+    width: 100%;
+    height: 250px;
+    margin: 1%;
+    border-radius: 10px;
+    background-color: honeydew;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cats-list > article > p {
+    size: 0.8em;
+  }
+}
+
+.form-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-wrapper > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+}
+
+input {
+  margin: 5px;
+  height: 30px;
+  border: none;
+  border-bottom: solid 2px grey;
+  text-align: center;
+}
+
+input:focus {
+  border-bottom: solid 2px teal;
+  outline-color: teal;
+}
+
+button,
+.button {
+  height: 30px;
+  margin: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+button:hover,
+.button.hover {
+  background-color: teal;
+}
+
+button:disabled,
+.button:disabled {
+  background-color: grey;
+}
+
+.message-container {
+  padding: 10px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}

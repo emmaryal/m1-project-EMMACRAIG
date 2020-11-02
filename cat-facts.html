@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cat Browser</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,600"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/6d7e9862eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <!-- NAVIGATION BAR -->
+      <div class="nav-container">
+        <!-- HOME BUTTON -->
+        <!--<a href="index.html"
+          ><img
+            src="/images/cat-face-logo-black-bg.png"
+            alt="Logo"
+            class="navbar-brand"
+        /></a>-->
+        <i class="fas fa-bars"></i>
+        <ul class="nav-menu">
+          <!-- NAVIGATION BUTTONS -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="cat-facts.html">Cats</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="cat-search">
+      <button onClick="showAll()" type="button" id="allcats">all cats</button>
+      <button onClick="showRandom()" type="button" id="randomCat">
+        today's random cat
+      </button>
+      <button onClick="showAllergy()" type = "button" id="allergyCats">allergy</div>
+      </button>
+    <section class="cats-list"></section>
+
+    <footer>
+      <ul class="footer-list">
+        <li>icon link to our fb page</li>
+        <li>icon link to our insta page</li>
+        <li>icon contact</li>
+      </ul>
+    </footer>
+    <script src="scripts/console.js"></script>
+    <script src="scripts/catApiService.js"></script>
+  </body>
+</html>
