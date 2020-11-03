@@ -70,6 +70,12 @@ class Signup {
     });
   };
 
+  redirect = () => {
+    setTimeout(function () {
+      location.assign("index.html");
+    }, 2000);
+  };
+
   // handle the sending of the data ( on submit )
   saveData = (event) => {
     // Prevent the default behaviour of the form submit button
@@ -94,13 +100,9 @@ class Signup {
     this.nameInput.value = "";
     this.emailInput.value = "";
     this.passwordInput.value = "";
-
-  }
-      redirect = () => {
-        setTimeout(function () {
-          location.assign("index.html");
-        }, 2000);
-      };
+    this.errorsWrapper.textContent = `Welcome, ${newUser.name}`;
+    this.redirect();
+  };
 
   addListeners = () => {
     this.emailInput.addEventListener("input", this.handleEmailInput);
@@ -115,10 +117,9 @@ class Signup {
   };
 }
 
-// setTimeout( () => location.assign("dashboard.html"), 2000)
+//setTimeout( () => location.assign("index.html"), 2000)
 
 const signup = new Signup();
-//this.redirect();
 
 // Add event listeners once the page and all the resources are loaded
 
