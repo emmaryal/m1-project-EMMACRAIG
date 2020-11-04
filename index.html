@@ -24,7 +24,7 @@
             alt="Logo"
             class="navbar-brand"
         /></a> -->
-        <!--
+        <i onclick="openNav()" class="fas fa-bars"></i>
          <ul class="nav-menu">
           
           <li><a href="index.html">Home</a></li>
@@ -33,18 +33,19 @@
           <li><a href="cat-facts.html">Dashboard</a></li>
         </ul>
       </div>
-    </nav>-->
+    </nav>
 <div id = "main">
-    <div id="mySidenav" class="sidenav">
+  
+    <ul id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html">Home</a>
-      <a href="signup.html">Sign Up</a>
-      <a href="login.html">Login</a>
-      <a href="cat-facts.html">Dashboard</a>
-    </div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="cat-facts.html">Dashboard</a></li>
+    </ul>
     
     <!-- Use any element to open the sidenav -->
-   <i onclick="openNav()" class="fas fa-bars"></i>
+  
   </div> 
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <!--<div id="main">
@@ -68,13 +69,12 @@
     </section>
 
     <footer>
-      <ul class="footer-list">
-        <li>icon link to our fb page</li>
-        <li>icon link to our insta page</li>
-        <li>icon contact</li>
-      </ul>
+      <div class="footer-list">
+        <span class = "fa fa-instagram" aria-hidden = "true"></span>
+        <span class = "fa fa-facebook-square" aria-hidden = "true"></span>
+        <span class = "fa fa-envelope" aria-hidden = "true"></span>
+      </div>
     </footer>
-
   </div>
     <script src="scripts/nav_menu.js"></script>
     <script

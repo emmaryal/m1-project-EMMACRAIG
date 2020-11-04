@@ -3,27 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <title>Cat Browser</title>
-
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    
+
    
   </head>
 
   <body>
-    <nav>
+   <!--<nav>-->
       <!-- NAVIGATION BAR -->
-      <div class="nav-container">
+      <!--<div class="nav-container">-->
         <!-- HOME BUTTON -->
         <!--<a href="index.html"
-            ><img src="/images/cat-face-logo-black-bg.png" alt="Logo" class="navbar-brand"
-          /></a>-->
-
-        <i class="fas fa-bars"></i>
-        <ul class="nav-menu">
-          <!-- NAVIGATION MENU -->
+          ><img
+            src="/images/transparent-kitty-face-png-cat-icon-png-free.jpeg"
+            alt="Logo"
+            class="navbar-brand"
+        /></a> -->
+        <i onclick="openNav()" class="fas fa-bars"></i>
+         <ul class="nav-menu">
+          
           <li><a href="index.html">Home</a></li>
           <li><a href="signup.html">Sign Up</a></li>
           <li><a href="login.html">Login</a></li>
@@ -31,6 +34,19 @@
         </ul>
       </div>
     </nav>
+<div id = "main">
+  
+    <ul id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="cat-facts.html">Dashboard</a></li>
+    </ul>
+    
+    <!-- Use any element to open the sidenav -->
+  
+  </div> 
     <section class="banner"></section>
     <section class="login">
       <h2></h2>
@@ -44,13 +60,16 @@
         <div class="message-container"></div>
       </div>
     </section>
+  
     <footer>
-      <ul class="footer-list">
-        <li>icon link to our fb page</li>
-        <li>icon link to our insta page</li>
-        <li>icon contact</li>
-      </ul>
+      <div class="footer-list">
+        <span class = "fa fa-instagram" aria-hidden = "true"></span>
+        <span class = "fa fa-facebook-square" aria-hidden = "true"></span>
+        <span class = "fa fa-envelope" aria-hidden = "true"></span>
+      </div>
     </footer>
+  </div>
+  <script src="scripts/nav_menu.js"></script>
     <script src="scripts/User.js"></script>
     <script src="scripts/Login.js"></script>
     <script src="scripts/Database.js"></script>
