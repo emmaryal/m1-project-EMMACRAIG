@@ -314,7 +314,7 @@ li {
 }
 
 body {
-  background-image: url("/images/grey-wallpaper.jpg");
+  background-image: url(./images/grey-wallpaper.jpg);
 }
 /*
 .header {
