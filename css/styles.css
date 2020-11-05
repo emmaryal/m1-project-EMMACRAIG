@@ -492,6 +492,11 @@ font-weight: 700;
   padding: 3px;
 }
 
+#q1-div > a, #q2-div > a, #q3-div > a, #q4-div > a
+{
+  align-items: flex-end;
+  font-size: x-large;
+}
 
 .faqs-list > div {
  
