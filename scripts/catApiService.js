@@ -1,6 +1,7 @@
 "use strict";
 
 const catList = document.querySelector(".cats-list");
+const frontImg = document.querySelector(".random-cat-portal");
 
 const allCatButton = document.getElementById("allcats");
 const randomCatButton = document.getElementById("randomCat");
@@ -55,12 +56,46 @@ function showRandom() {
       }
       const div = document.createElement("div");
 
-      div.innerHTML = `<img class = "random_cat"src= "${data[0].url}" />`;
+      //div.innerHTML = `<img class = "random_cat"src= "${data[0].url}" />`;
+      div.innerHTML = `<img class = "random-cat" src= "${data[0].url}" />`;
 
       //console.log("data.id", data[index].id);
       catList.appendChild(div);
     });
 }
+
+function showBanner() {
+  // Make a request to the server (API) using the URL
+
+  fetch(`https://api.thecatapi.com/v1/images/search`)
+    .then((response) => {
+      console.log("response", response);
+      return response.json();
+    })
+    .then((data) => {
+      console.log("data", data);
+      
+
+      
+      const div = document.createElement("div");
+
+      div.innerHTML = `<img class = "random-cat-portal" src= "${data[0].url}" />`;
+
+      frontImg.appendChild(div);
+    });
+}
+
+function getThreeCats() {
+
+  showBanner();
+  showBanner();
+  showBanner();
+}
+
+
+
+
+
 
 /*function showCats() {
   // clear data from previous search

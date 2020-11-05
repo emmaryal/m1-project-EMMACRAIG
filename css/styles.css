@@ -101,6 +101,8 @@ nav,
 section {
   display: block;
   box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 body {
   line-height: 1;
@@ -133,6 +135,32 @@ table {
 
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Grandstander&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
+.rotate {
+  animation: rotation 5s infinite linear;
+  padding: 15px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+
+
+
+}
+
+/*nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+} */
 
 h3 {
   size: 2em;
@@ -140,20 +168,17 @@ h3 {
 
 body {
   font-family: "Aclonica", sans-serif;
+  cursor: url("/images/pawprint.png"), auto;
 }
 
 a {
   color: black;
+  font-weight: 800;
   text-decoration: none;
 }
 
 a:hover {
   color: teal;
-}
-
-body,
-a {
-  cursor: url("/images/pawprint.png"), auto;
 }
 
 #site-title {
@@ -194,21 +219,13 @@ nav {
   margin: 0;
 }
 
-section {
-  padding: 20px;
-}
+
 
 nav {
   width: 100%;
   background-image: none;
 }
-.fa-bars {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 100px;
-  height: 100 px;
-}
+
 
 /* For mobile phones: */
 
@@ -221,14 +238,14 @@ nav {
 
 /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
+  height: 100%;
+  width: 0;
+  position: fixed;
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden;
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
@@ -272,7 +289,7 @@ i {
   justify-content: flex-end;
   padding: 0;
 } */
-@media only screen and (max-width: 400px) {
+/*@media only screen and (max-width: 400px) {
   .nav-menu {
     display: none;
   }
@@ -285,39 +302,33 @@ i {
     padding: 0;
   }
 
-  .fa-bars {
-    display: none;
-  }
+
   .closebtn {
     display: none;
   }
 }
-.fa-bars {
-  padding: 10px;
-}
+*/
 
 li {
   padding: 25px 10px 0 10px;
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
   background-image: url(/images/grey-wallpaper.jpg);
 }
-
+/*
 .header {
-  background: url(/images/cat-background.png) no-repeat center center / cover;
-  width: 100%;
+  /*background: url(/images/cat-background.png) no-repeat center center / cover;*/
+/*width: 100%;
   height: 40vh; /* 50vh; 50% of viweport height*/
-}
+/*}
 
 .banner {
-  background: url(/images/cat-background.png) no-repeat center center / cover;
-  width: 100%;
+ /* background: url(/images/cat-background.png) no-repeat center center / cover;*/
+/* width: 100%;
   height: 20vh; /* 50vh; 50% of viweport height*/
-}
-
+/*} */
+/*
 #portal-text {
   position: absolute;
   left: 30%;
@@ -328,21 +339,47 @@ body {
 
 #portal-text > p {
   font-size: 10px;
-  color: aqua;
-  font-family: "Grandstander", cursive;
-}
+  color: teal;
+  font-family: 'Dancing Script', cursive;
+} */
 
 .portal-info {
   width: 100vw;
+font-weight: 700;
   background-color: black;
-  color: aqua;
-  font-family: "Grandstander", cursive;
+  color:whitesmoke;
+  font-family: 'Nova Mono', monospace;
+  margin-bottom: 10px;
 }
 
 .random-cat {
-  /*background-image: url(/images/grey-wallpaper.jpg);*/
   font-family: "Grandstander", cursive;
-  height: 25vh;
+  height: auto;
+  width: 100%;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.random-cat-portal > div {
+  width: 30%;
+  height: auto;
+  margin: 1%;
+  /*border-radius: 10px;*/
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.random-cat-portal {
+  font-family: "Grandstander", cursive;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .cats-list {
@@ -357,22 +394,26 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.cats-list > img {
-  box-shadow: 30px, teal;
-  border: 5px; green;
-  
-}
+
 .cats-list > article {
   width: 30%;
   height: auto;
   margin: 1%;
   border-radius: 10px;
-  background-color: honeydew;
+  background-color: whitesmoke;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.box-shadow { 
+  background-color: whitesmoke;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+  0 1px 5px 0 rgba(0,0,0,0.12),
+  0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
 
 .cats-list > article > h3 {
   font-size: 20px;
@@ -387,9 +428,19 @@ body {
 }
 
 .cats-list > div {
-  width: auto;
+  /*width: auto;
   height: auto;
   margin: 1%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+  width: 50%;
+  height: auto;
+  margin: 1%;
+  /*border-radius: 10px;*/
+  background-color: whitesmoke;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -400,8 +451,8 @@ body {
   box-shadow: teal;
 }
 .cat-search {
-  position: relative;
-  top: 5vh;
+  /*position: relative;
+  top: 5vh;*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -419,36 +470,65 @@ body {
   width: 22%;
   background-color: beige;
 }
-.random_cat {
+/*.random_cat {
   width: 50vw;
   height: 40vh;
   object-fit: cover;
-}
+} */
 
+
+
+/* screen size = mobile */
 @media (max-width: 450px) {
   .header-text {
     width: 85%;
   }
   .cats-list > article {
-    width: 950%;
+    width: 95%;
     height: 250px;
-    margin: 1%;
-    border-radius: 10px;
+    margin: 10%;
+    /*border-radius: 10px;
     background-color: honeydew;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
   }
 
   .cats-list > article > p {
     size: 0.8em;
   }
+  /*
+  .cat-search {
+    position: relative;
+    top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  } */
 
-  .cat-search > button{
-    font-size: xx-small;
+  .cat-search > button {
+    width: 60%;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .random-cat-portal > div {
+    width: 70%;
+    height: auto;
+    margin: 1%;
+    /*border-radius: 10px;*/
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
+/* end of screen size = mobile */
+
 
 
 article > span {
@@ -463,7 +543,7 @@ span > a {
 span > a:hover {
   text-decoration: underline;
 }
-
+/* screen size = tablet */
 @media screen and (min-width: 451px) and (max-width: 750px) {
   .header-text {
     width: 85%;
@@ -472,18 +552,33 @@ span > a:hover {
     width: 40%;
     height: 250px;
     margin: 1%;
-    border-radius: 10px;
+    /*border-radius: 10px;
     background-color: honeydew;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
   }
 
   .cats-list > article > p {
     size: 0.8em;
   }
+
+  .random-cat-portal > div {
+    width: 45%;
+    height: auto;
+    /*margin: 1%;
+    border-radius: 10px;
+    background-color: honeydew;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+  }
 }
+
+/* end of screen size = tablet */
+
 
 .form-wrapper {
   padding: 20px;
@@ -498,7 +593,6 @@ span > a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 600px;
 }
 
 input {
@@ -537,36 +631,33 @@ button:disabled,
   padding: 10px;
 }
 
+
+
+
+/* footer */
+
 .footer-list {
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: space-around;
 
-  width: 100vh;
+  width: 100vw;
 }
 
 .footer-list > span {
-  font-size: 30px;
+  font-size: 55px;
   padding: 10px;
+  transition: 2s;
+}
+
+.footer-list > span:hover {
+  font-size: 70px;
 }
 
 footer {
   position: fixed;
   bottom: 0;
   background-color: white;
-  width: 100vh;
+  width: 100vw;
 }
-/*.footer-list {
-  padding: 40px 0;
-}*/
-
-/* @media write for mobile size */
-
-/* @media write for tablet size 
-@media (max-width: 750px) {
-  .header-text {
-    width: 85%;
-  }*/
-
-/* @media write for desktop size */

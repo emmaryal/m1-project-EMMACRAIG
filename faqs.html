@@ -8,13 +8,19 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="stylesheet" href= "./css/styles.css" />
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    </head>
     
 
    
   </head>
 
-  <body onload="showRandom()">
-   <nav>
+  <body>
+   <!--<nav>-->
       <!-- NAVIGATION BAR -->
       <!--<div class="nav-container">-->
         <!-- HOME BUTTON -->
@@ -25,8 +31,7 @@
             class="navbar-brand"
         /></a> -->
         <img class = "rotate" src = "./images/animalfootprintincircularbutton_80262.png" onclick="openNav()"/>
-         
-    
+        
 <div id = "main">
   
     <ul id="mySidenav" class="sidenav">
@@ -41,28 +46,18 @@
     <!-- Use any element to open the sidenav -->
   
   </div> 
-    
-    <div class="cat-search">
-      <button onClick="showAll()" type="button" id="allcats">show the most popular breeds</button>
-      <button onClick="showRandom()" type="button" id="randomCat">
-        generate a funny cat photo
-      </button>
-      <!--<button onClick="showCats()" type = "button" id="HatsCats">show photos of cats</div>
-      </button>-->
-      <button onClick="showChildFriendly()" type = "button" id="childCats">show child-friendly cats
-      </button>
-      <button onClick="showDogFriendly()" type = "button" id="dogCats">show dog-friendly cats
-      </button>
-      <button onClick="showIntelligence()" type = "button" id="intelligentCats">show intelligent cats
-      </button>
-      <button onClick="showEnergetic()" type = "button" id="energeticCats">show energetic cats
-      </button>
-    </div>
+   
+  <section class = "cats-list">
 
-  </nav>
-    <section class="cats-list"></section>
-    
-    
+<div class = "box-shadow">1. Why do cats hate water?</div>
+<div class = "animate__animated animate__zoomInDown">here is a zoomy one</div>
+<div class = "box-shadow">2. How old is my cat in human years?</div>
+<div class = "box-shadow">3. Why do cats bring their owners gifts of dead animals?</div>
+<div class = "box-shadow">4. Why does my cat lick me?</div>
+<div class = "box-shadow">5. Why does my cat drool?</div>
+
+  </section>
+  
     <footer>
       <div class="footer-list">
         <span class = "fa fa-instagram" aria-hidden = "true"></span>
@@ -72,16 +67,10 @@
     </footer>
   </div>
   <script src="scripts/nav_menu.js"></script>
-  <script> 
-   
-</script>
+  
     <script
     src="https://kit.fontawesome.com/6d7e9862eb.js"
     crossorigin="anonymous"
-    ></script>
-    <script src="scripts/console.js"></script>
-    <script src="scripts/catApiService.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  ></script>
   </body>
 </html>
