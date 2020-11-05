@@ -486,7 +486,11 @@ font-weight: 700;
   justify-content: space-evenly;
 }
 
-
+#q1-div, #q2-div, #q3-div, #q4-div
+{
+  font-size: smaller;
+  padding: 3px;
+}
 
 
 .faqs-list > div {

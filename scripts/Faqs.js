@@ -42,4 +42,20 @@ function showAnswer1() {
     }
  }
 
- 
+ calcAge = (catYears) =>
+ {
+     let humanYears = 0;
+     if (catYears > 2)
+     {
+         humanYears = 4*(catYears - 2) + catYears -2;
+         return humanYears;
+     }
+     else if (catYears ===2)
+     {
+         return humanYears = 25;
+     }
+     else
+     {
+         return humanYears = 13;
+     }
+ }
