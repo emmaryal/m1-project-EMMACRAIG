@@ -53,41 +53,57 @@
     <span class = "box-shadow"  onClick="showAnswer1()"  id="q1-button">
       1. Why do cats hate water?
     </span>
-    
-<!--<div class = "animate__animated animate__zoomInDown">here is a zoomy one</div> -->
+
+    <div id="q1-div" style = "display:none;" 
+    class = "animate__animated animate__zoomInDown box-shadow">
+    <a href="javascript:void(0)" class="closebtn" onclick="showAnswer1()">&times;</a>
+    <p>Cats groom themselves with constant regular licking, and this stops skin oils from building up on their fur. As a result a cat's coat is fluffier and less waterproof than a dog's, so they get colder and their fur feels heavier if they get wet.</p><button><a href = "https://www.wikipedia.com" > read more </a></button>
+  </div>
 
 <span class = "box-shadow"  onClick="showAnswer2()" id="q2-button">
   2. How old is my cat in human years?
 </span>
 
+<div id="q2-div" style = "display:none;" 
+class = "animate__animated animate__zoomInDown box-shadow">
+<a href="javascript:void(0)" class="closebtn" onclick="showAnswer2()">&times;</a>
+
+
+<div class="form-wrapper">
+  <form class="calcAge" action="">
+    <input type="number" id="catYears" placeholder="Enter your cat's age as a number" />
+  <!-- The `disabled` deactivates the button. Button will be activated or desactivated by the `checkButton` method in the Singup.js  -->
+     <button type="submit" class="button" id="catCalcButton"> Calculate</button>
+    <p id = "humanAge"></p>
+  </form> 
+</div>
+</div>
+
+
 <span class = "box-shadow"  onClick="showAnswer3()"  id="q3-button">
   3. Why does my cat lick me?
 </span>
+
+<div id="q3-div" style = "display:none;" 
+class = "animate__animated animate__zoomInDown box-shadow">
+<a href="javascript:void(0)" class="closebtn" onclick="showAnswer3()">&times;</a>
+<p>Kitty gives you a tongue bath because she accepts you as a member of her family and feels completely secure when she’s with you. She remembers how her mother gave her cleanings as a kitten and now is continuing what she learned, only with the roles reversed (unless you happen to lick her as well). Your cat is nurturing you in the best way she knows how – by keeping you clean and claiming you as her own.</p><button><a href = "https://www.wikipedia.com" > read more </a></button>
+</div>
 
 <span class = "box-shadow"  onClick="showAnswer4()"  id="q4-button">
   4. Why do cats bring their owners gifts of dead animals?
 </span>
 
-<div id="q1-div" style = "display:none;" 
-  class = "animate__animated animate__zoomInDown box-shadow">
-  <a href="javascript:void(0)" class="closebtn" onclick="showAnswer1()">&times;</a>
-  <p>Cats groom themselves with constant regular licking, and this stops skin oils from building up on their fur. As a result a cat's coat is fluffier and less waterproof than a dog's, so they get colder and their fur feels heavier if they get wet.</p><span>read more</span>
-</div>
-<div id="q2-div" style = "display:none;" 
-class = "animate__animated animate__zoomInDown box-shadow">
-<a href="javascript:void(0)" class="closebtn" onclick="showAnswer2()">&times;</a>
-<p>the answer to how old is my cat in human years the answer to how old is my cat in human years the answer to how old is my cat in human years the answer to how old is my cat in human years</p><span>read more</span>
-</div>
-<div id="q3-div" style = "display:none;" 
-class = "animate__animated animate__zoomInDown box-shadow">
-<a href="javascript:void(0)" class="closebtn" onclick="showAnswer3()">&times;</a>
-<p>Kitty gives you a tongue bath because she accepts you as a member of her family and feels completely secure when she’s with you. She remembers how her mother gave her cleanings as a kitten and now is continuing what she learned, only with the roles reversed (unless you happen to lick her as well). Your cat is nurturing you in the best way she knows how – by keeping you clean and claiming you as her own.</p><span>read more</span>
-</div>
+
+
+
+
+
 <div id="q4-div" style = "display:none;" 
 class = "animate__animated animate__zoomInDown box-shadow">
 <a href="javascript:void(0)" class="closebtn" onclick="showAnswer4()">&times;</a>
 <p>In the wild, cat mothers teach their young how to eat their food by bringing home dead or injured prey. ... By leaving a dead animal on the back porch, your cat is acting out its natural role as mother and teacher. You, her loving owner, represent her surrogate family.
-</p><span>read more</span>
+</p><button><a href = "https://www.wikipedia.com" > read more </a> </button>
 </div>
 
 
