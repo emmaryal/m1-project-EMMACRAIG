@@ -2,10 +2,12 @@
 
 function showAnswer1() {
     const answer1 = document.getElementById('q1-div');
-    
+    //const button1 = document.getElementById("q1-button");
+
     if (answer1.style.display === "none") {
         answer1.style.display = "block";
     } else {
+       
         answer1.style.display = "none";
     }
  }

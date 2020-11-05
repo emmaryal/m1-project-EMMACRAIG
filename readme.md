@@ -12,7 +12,7 @@ OR, actually going to take the plunge and buy one, but unsure about which breed 
 
 
 
-With ***myVirtualPet*** you can find pictures of cats according to breed, plus a random image generator of a cute kittie. All the fun of a cat, without the hair!
+With Meow you can find pictures of cats according to breed, plus a random image generator of a cute kittie. All the fun of a cat, without the hair!
 
 
 
@@ -29,11 +29,12 @@ The **MVP** will include:
 - **Sign Up:** A registration form for new users with email and password validation. 
 - **A toggle burger menu** for small screens
 - **Log In:** A form for signed up users with email and password validation. 
-- **FAQ:**questions about cats ?????
+- **FAQ:**questions about cats
 
 ## Backlog
 
-- Search bar to select by breed, size etc.
+- A function to calculate **cat age in human years** and vice versa
+- **Modals** in faqs page
 
 
 
@@ -48,37 +49,50 @@ The **MVP** will include:
 
 - root/
   - index.html
-  - Catinfo.html
-  - faq.html
+  
+  - cat-facts.html
+  
+  - faqs.html
+  
   - login.html
+  
   - signup.html
+  
   - css/
     - style.css
     
-      
   - src/
-    - Main.js
-    - Login.js
+    - catApiService.js
     - Database.js
+    - Faqs.js
+    - Nav_menu.js
     - Signup.js
     - User.js
     - Validator.js
-    -catinfo.js
-- img/
+    
+    Images/
+    
+    - Animalfootprintcircularbutton_80262.png
+    
+    - Black_Cat.cur
+    
+    - Grey-wallpaper.jpg
+    
+      
 
 ## API
 
-- Check out the amazing thecatapi API I used. 
+-  thecatapi API 
 
 ## Links
 
-#### Trello
 
 
 
-#### GitHub
+
+#### [GitHub](emmaryal/m1-project-EMMACRAIG)
 
 
 
-#### Slides
+#### [[Slides](https://docs.google.com/presentation/d/1GFCPU0zsWxGt30PKSIF3xGrgRJYEzg5nf57-UA91ueM/edit#slide=id.ga7479fb23c_0_8)]	
 
