@@ -15,7 +15,7 @@ function showAll() {
   while (catList.hasChildNodes()) {
     catList.removeChild(catList.firstChild);
   }
-  for (let index = 0; index <= 6; index++)
+  for (let index = 0; index <= 66; index++)
     // Make a request to the server (API) using the URL
     fetch(
       `https://api.thecatapi.com/v1/breeds?api_key=2a006745-f90e-4896-bf5a-038a1a072e08`
@@ -172,7 +172,7 @@ function showDogFriendly() {
     catList.removeChild(catList.firstChild);
   }
   // Make a request to the server (API) using the URL
-  for (let index = 0; index <= 6; index++) {
+  for (let index = 0; index <= 66; index++) {
     // Make a request to the server (API) using the URL
     fetch(
       `https://api.thecatapi.com/v1/breeds?api_key=2a006745-f90e-4896-bf5a-038a1a072e08`

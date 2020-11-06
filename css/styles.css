@@ -156,7 +156,7 @@ a {
 }
 
 a:hover {
-  color: teal;
+  color: rgb(167, 179, 179);
 }
 
 #site-title {
@@ -174,6 +174,8 @@ a:hover {
   animation: rotation 5s infinite linear;
   margin-top: 15px;
   margin-left: 15px;
+  width: 100px;
+  height: 100px;
 }
 
 @keyframes rotation {
@@ -245,6 +247,8 @@ nav {
   }*/
 
 /* The side navigation menu */
+
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -419,6 +423,7 @@ font-weight: 700;
   margin-top: 10px;
   height: auto;
   overflow: auto;
+  padding: 0px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -459,7 +464,7 @@ font-weight: 700;
   flex-direction: column;
   align-items: center; */
 
-  width: 50%;
+  width: 30%;
   height: auto;
   margin: 1%;
   /*border-radius: 10px;*/
@@ -609,7 +614,7 @@ button,
 
 button:hover,
 .button.hover {
-  background-color: teal;
+  background-color: rgb(167, 179, 179);
 }
 
 button:disabled,
@@ -670,9 +675,30 @@ footer {
 
 /* screen size = mobile */
 @media (max-width: 450px) {
+
+  .rotate {
+ 
+    width: 50px;
+    height: 50px;
+  }
+
+
   .header-text {
     width: 85%;
   }
+
+  .cats-list > div {
+ 
+  
+    width: 50%;
+ 
+  }
+
+
+
+
+
+
   .cats-list > article {
     width: 95%;
     height: 250px;
@@ -731,6 +757,15 @@ footer {
   .header-text {
     width: 85%;
   }
+
+
+  .cats-list > div {
+ 
+  
+    width: 50%;
+ 
+  }
+
   .cats-list > article {
     width: 40%;
     height: 250px;
