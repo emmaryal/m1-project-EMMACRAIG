@@ -146,7 +146,7 @@ h3 {
 
 body {
   font-family: "Aclonica", sans-serif;
-  cursor: url("/images/pawprint.png"), auto;
+  cursor: url("./../images/pawprint.png"), auto;
 }
 
 a {
