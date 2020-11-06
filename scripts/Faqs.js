@@ -43,7 +43,7 @@ function showAnswer3() {
     answer2.style.display = "none";
     answer4.style.display = "none";
   } else {
-    answer4.style.display = "none";
+    answer3.style.display = "none";
   }
 }
 

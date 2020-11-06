@@ -524,9 +524,26 @@ font-weight: 700;
 .faqbutton {
   height: 20px;
   margin: 5px;
-  background-color: whitesmoke;
+  background-color: rgb(167, 179, 179);
   color: white;
   border: none;
+
+}
+
+.faqbutton > a
+
+{
+  background-color: rgb(167, 179, 179);
+}
+
+.faqbutton >a:hover {
+  color: whitesmoke;
+}
+
+.calcAge > p {
+  text-align: center;
+  font-family:  'Nova Mono', monospace;
+  padding-top: 10px;
 }
 
 /* END OF FAQS */
@@ -694,7 +711,9 @@ footer {
  
   }
 
-
+.calcAge > input {
+  font-size: smaller;
+}
 
 
 
