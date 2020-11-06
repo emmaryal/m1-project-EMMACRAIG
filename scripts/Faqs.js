@@ -1,12 +1,19 @@
 "use strict";
 
+const answer1 = document.getElementById("q1-div");
+const answer2 = document.getElementById("q2-div");
+const answer3 = document.getElementById("q3-div");
+const answer4 = document.getElementById("q4-div");
 function showAnswer1() {
-  const answer1 = document.getElementById("q1-div");
+  
 
   //const button1 = document.getElementById("q1-button");
 
   if (answer1.style.display === "none") {
     answer1.style.display = "block";
+    answer2.style.display = "none";
+    answer3.style.display = "none";
+    answer4.style.display = "none";
   } else {
     answer1.style.display = "none";
   }
@@ -14,12 +21,15 @@ function showAnswer1() {
 
 function showAnswer2() {
   
-  const answer2 = document.getElementById("q2-div");
  
   //const button1 = document.getElementById("q1-button");
 
   if (answer2.style.display === "none") {
     answer2.style.display = "block";
+    answer1.style.display = "none";
+    answer3.style.display = "none";
+    answer4.style.display = "none";
+
   }
    else {
     answer2.style.display = "none";
@@ -27,20 +37,24 @@ function showAnswer2() {
 }
 
 function showAnswer3() {
-  const answer3 = document.getElementById("q3-div");
-
   if (answer3.style.display === "none") {
     answer3.style.display = "block";
+    answer1.style.display = "none";
+    answer2.style.display = "none";
+    answer4.style.display = "none";
   } else {
-    answer3.style.display = "none";
+    answer4.style.display = "none";
   }
 }
 
 function showAnswer4() {
-  const answer4 = document.getElementById("q4-div");
+ 
 
   if (answer4.style.display === "none") {
     answer4.style.display = "block";
+    answer1.style.display = "none";
+    answer2.style.display = "none";
+    answer3.style.display = "none";
   } else {
     answer4.style.display = "none";
   }
