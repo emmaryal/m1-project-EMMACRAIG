@@ -4,7 +4,7 @@ const answer1 = document.getElementById("q1-div");
 const answer2 = document.getElementById("q2-div");
 const answer3 = document.getElementById("q3-div");
 const answer4 = document.getElementById("q4-div");
-function showAnswer1() {
+/*function showAnswer1() {
   
 
   //const button1 = document.getElementById("q1-button");
@@ -58,7 +58,7 @@ function showAnswer4() {
   } else {
     answer4.style.display = "none";
   }
-}
+} */
 
 const age = document.getElementById("catYears");
 const calcButton = document.getElementById("catCalcButton");
@@ -84,3 +84,28 @@ calcButton.addEventListener("click", function (event) {
 
   humanAge.textContent = `In human years, your cat would be ${humAge}`;
 });
+
+
+var card1 = document.getElementById('card1');
+card1.addEventListener( 'click', function() {
+  card1.classList.toggle('is-flipped');
+});
+
+
+
+
+var card2 = document.getElementById('card2');
+card2.addEventListener( 'click', function() {
+  card2.classList.toggle('is-flipped');
+});
+
+var card3 = document.getElementById('card3');
+card3.addEventListener( 'click', function() {
+  card3.classList.toggle('is-flipped');
+});
+
+var card14 = document.getElementById('card4');
+card4.addEventListener( 'click', function() {
+  card4.classList.toggle('is-flipped');
+});
+

@@ -50,7 +50,16 @@
  
   <section class = "faqs-list">
 
-    <span class = "box-shadow"  onClick="showAnswer1()"  id="q1-button">
+
+    <div class="scene scene--card">
+      <div class="card" id= "card1">
+        <div class="card__face card__face--front box-shadow"> 1. Why do cats hate water? <br><p>click for answer</p></div>
+        <div class="card__face card__face--back box-shadow">Cats groom themselves with constant regular licking, and this stops skin oils from building up on their fur. As a result a cat's coat is fluffier and less waterproof than a dog's, so they get colder and their fur feels heavier if they get wet.
+          <!--<button class = "faqbutton"><a href = "https://www.sciencefocus.com/nature/why-do-cats-hate-water/" > read more </a></button>--></div>
+      </div>
+    </div>
+    
+    <!--<span class = "box-shadow"  onClick="showAnswer1()"  id="q1-button">
       1. Why do cats hate water?
     </span>
 
@@ -59,9 +68,29 @@
     <a href="javascript:void(0)" class="closebtn" onclick="showAnswer1()">&times;</a>
     <p>Cats groom themselves with constant regular licking, and this stops skin oils from building up on their fur. As a result a cat's coat is fluffier and less waterproof than a dog's, so they get colder and their fur feels heavier if they get wet.</p>
     <button class = "faqbutton"><a href = "https://www.sciencefocus.com/nature/why-do-cats-hate-water/" > read more </a></button>
-  </div>
+  </div> -->
+  <div class="scene scene--card">
+    <div class="card" id= "card2">
+      <div class="card__face card__face--front box-shadow"> 
+        2. How old is my cat in human years?
+      </div>
+      <div class="card__face card__face--back box-shadow">
+        <div class="form-wrapper">
+        <form class="calcAge" action="">
+          <input type="number" id="catYears" placeholder="Enter your cat's age as a number" />
+        
+           <button type="submit" class="faqbutton" id = "catCalcButton"> 
+             Calculate
+            </button>
+          <p id = "humanAge"></p>
 
-<span class = "box-shadow"  onClick="showAnswer2()" id="q2-button">
+       
+        </form> 
+    </div>
+  </div>
+  </div>
+</div>
+<!-- <span class = "box-shadow"  onClick="showAnswer2()" id="q2-button">
   2. How old is my cat in human years?
 </span>
 
@@ -73,15 +102,22 @@ class = "animate__animated animate__zoomInDown box-shadow">
 <div class="form-wrapper">
   <form class="calcAge" action="">
     <input type="number" id="catYears" placeholder="Enter your cat's age as a number" />
-  <!-- The `disabled` deactivates the button. Button will be activated or desactivated by the `checkButton` method in the Singup.js  -->
+  The `disabled` deactivates the button. Button will be activated or desactivated by the `checkButton` method in the Singup.js
      <button type="submit" class="faqbutton" id="catCalcButton"> Calculate</button>
     <p id = "humanAge"></p>
   </form> 
 </div>
+</div> -->
+
+<div class="scene scene--card">
+  <div class="card" id= "card3">
+    <div class="card__face card__face--front box-shadow"> 3. Why does my cat lick me?<br><p>click for answer</p></div>
+    <div class="card__face card__face--back box-shadow">Kitty gives you a tongue bath because she accepts you as a member of her family and feels completely secure when she’s with you. She remembers how her mother gave her cleanings as a kitten and now is continuing what she learned, only with the roles reversed (unless you happen to lick her as well). Your cat is nurturing you in the best way she knows how – by keeping you clean and claiming you as her own.
+    <!--<button class = "faqbutton"><a href = "https://petcentral.chewy.com/behavior-pet-body-language-why-does-my-cat-lick-me/" > read more </a></button>--></div>
+  </div>
 </div>
-
-
-<span class = "box-shadow"  onClick="showAnswer3()"  id="q3-button">
+</div>
+<!-- <span class = "box-shadow"  onClick="showAnswer3()"  id="q3-button">
   3. Why does my cat lick me?
 </span>
 
@@ -90,9 +126,15 @@ class = "animate__animated animate__zoomInDown box-shadow">
 <a href="javascript:void(0)" class="closebtn" onclick="showAnswer3()">&times;</a>
 <p>Kitty gives you a tongue bath because she accepts you as a member of her family and feels completely secure when she’s with you. She remembers how her mother gave her cleanings as a kitten and now is continuing what she learned, only with the roles reversed (unless you happen to lick her as well). Your cat is nurturing you in the best way she knows how – by keeping you clean and claiming you as her own.</p>
 <button class = "faqbutton"><a href = "https://petcentral.chewy.com/behavior-pet-body-language-why-does-my-cat-lick-me/" > read more </a></button>
+</div> -->
+<div class="scene scene--card">
+  <div class="card" id= "card4">
+    <div class="card__face card__face--front box-shadow">4. Why do cats bring their owners gifts of dead animals?<br><p>click for answer</p></div>
+    <div class="card__face card__face--back box-shadow">In the wild, cat mothers teach their young how to eat their food by bringing home dead or injured prey. ... By leaving a dead animal on the back porch, your cat is acting out its natural role as mother and teacher. You, her loving owner, represent her surrogate family.
+    <!--<button class = "faqbutton"><a href = "https://www.thesprucepets.com/cat-hunting-gifts-553946#:~:text=The%20Thought%20Behind%20the%20'Gift,enjoy%20the%20hunt%20and%20chase.&text=This%20means%20when%20a%20cat,a%20part%20of%20their%20family." > read more </a> </button>--></div>
+  </div>
 </div>
-
-<span class = "box-shadow"  onClick="showAnswer4()"  id="q4-button">
+<!--<span class = "box-shadow"  onClick="showAnswer4()"  id="q4-button">
   4. Why do cats bring their owners gifts of dead animals?
 </span>
 
@@ -105,31 +147,13 @@ class = "animate__animated animate__zoomInDown box-shadow">
 class = "animate__animated animate__zoomInDown box-shadow">
 <a href="javascript:void(0)" class="closebtn" onclick="showAnswer4()">&times;</a>
 <p>In the wild, cat mothers teach their young how to eat their food by bringing home dead or injured prey. ... By leaving a dead animal on the back porch, your cat is acting out its natural role as mother and teacher. You, her loving owner, represent her surrogate family.
-</p><button class = "faqbutton"><a href = "https://www.thesprucepets.com/cat-hunting-gifts-553946#:~:text=The%20Thought%20Behind%20the%20'Gift,enjoy%20the%20hunt%20and%20chase.&text=This%20means%20when%20a%20cat,a%20part%20of%20their%20family." > read more </a> </button>
+</p><button class = "faqbutton"><a href = "https://www.thesprucepets.com/cat-hunting-gifts-553946#:~:text=The%20Thought%20Behind%20the%20'Gift,enjoy%20the%20hunt%20and%20chase.&text=This%20means%20when%20a%20cat,a%20part%20of%20their%20family." > read more </a> </button> 
 </div>
-
-
-
-
-
-
-
-
-
-
+-->
 <!--<div class = "box-shadow">2. How old is my cat in human years?</div>
     <div class = "box-shadow">3. Why do cats bring their owners gifts of dead animals?</div>
     <div class = "box-shadow">4. Why does my cat lick me?</div>
     <div class = "box-shadow">5. Why does my cat drool?</div> -->
-
-
-
-
-
-
-
-
-
 
   </section>
   
