@@ -682,7 +682,7 @@ footer {
 
 
 .card__face--front {
-  background: none;
+  background-image: url(./images/grey-wallpaper.jpg);
 }
 
 .card__face--back {
